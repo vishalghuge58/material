@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> CSS Combinators and Pseudo Elements</title>
+</head>
+
+<style type="text/css">
+	
+/* Combinators:  
+   div > span       Not direct decendent
+
+	div ~ span       For all siblings
+
+	div +span         only apply to first sibling
+
+   */
+
+
+div + span{
+	background-color: red;
+}
+/* here we can apply using the attribues of the tags */
+a[target=self]{
+	background-color: yellow;
+}
+
+
+/* Pseudo Elements */
+
+/*li:first-child{
+	background-color: brown;
+}
+li:nth-child(3){
+	background-color: red;
+}
+li:nth-child(odd){
+	background-color: aqua;
+}
+li:nth-child(3n){
+	background-color: yellow;
+}*/
+/*li:nth-child(3n-4){
+	background-color: green;
+}*/
+
+li::selection{
+	background-color: red;
+	color: yellow;
+}
+</style>
+
+<body>
+		<div>
+			<p>
+				<span>Hello World</span>
+			</p>
+			<span>Hello World</span>
+		</div>
+
+		<span>Hello World</span>
+
+		<span>Heloo World</span>
+
+		<br><br>
+
+
+		<a href="#" target="_blank">First Link</a>
+		<a href="#" target="self">Second Link</a>
+		<a href="#">Third Link</a>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>Item 7</li>
+			<li>Item 8</li>
+			<li>Item 9</li>
+			<li>Item 10</li>
+		</ul>
+
+
+
+</body>
+</html>

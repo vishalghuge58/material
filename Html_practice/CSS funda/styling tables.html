@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling tables</title>
+</head>
+
+<style >
+    #container{
+       max-width: 1000px;
+       margin: auto;
+
+    }
+
+    table{
+        width: 100%;
+         border-collapse: collapse;
+        font-family: Verdana;
+    }
+    tr,th,td,table{
+        border: 2px #aaa solid;
+
+    }
+    th{
+        background-color: green;
+        color: white;
+        height: 50px;
+        font-size: 20px;
+    }
+    tr:hover{
+        background-color: aqua;
+    }
+    tr:nth-child(even){
+        background-color: rgb(226, 219, 219);
+    }
+</style>
+<body>
+    
+    <h1 style="text-align: center;"> This Is Table</h1>
+
+    <div id="container" >
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Over all</th>
+            </tr>
+            <tr>
+                <td>Vishal</td>
+                <td>English</td>
+                <td>80</td>
+                <td>good</td>
+            </tr>
+            <tr>
+                <td>Vivek  </td>
+                <td>Math</td>
+                <td>90</td>
+                <td>excellent</td>
+            </tr>
+            <tr>
+                <td>Vinod</td>
+                <td>Math</td>
+                <td>100</td>
+                <td>Exceptional</td>
+            </tr>
+ 
+        </table>
+    </div>
+</body>
+</html>

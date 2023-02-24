@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Layout</title>
+</head>
+<style type="text/css">
+
+	*{
+ margin: 0px;
+ padding: 0px;
+	}
+
+	#nav{
+
+		background-color: darkred;
+	}
+
+	#nav h3{
+			padding: 12px;
+			color: white;
+	}
+	#cover{
+		height: 300px;
+
+		background-image: url('https://tse2.mm.bing.net/th?id=OIP.1OBA3SrACDvJ2ofU9n5eIgHaEK&pid=Api&P=0');
+		background-repeat: no-repeat;
+
+		background-size: cover;
+	}
+
+	#cover h1{
+		padding: 120px 0px;
+		text-align: center;
+		color: white;
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	
+	#container{
+		max-width: 1300px;
+		margin: auto;
+	}
+
+	#container h1{
+
+		margin: 20px;
+	}
+
+	.movies{
+		border: 1px black solid;
+		width: 24%;
+		float: left;
+
+		margin-top: 30px;
+		background-color: blue;
+
+		margin-left: 10px;
+	}
+
+</style>
+
+<body>
+
+<div  id="nav">
+
+	<h3>Zomato</h3>
+</div>
+
+	<div id="cover">
+		<h1>Iron man</h1>
+	</div>
+
+	<div id="container">
+		<h1>Movies of Tony Starks</h1>
+
+		<div class="movies">
+			<h1>Iron man1</h1>
+			<p>This is good marvel movie</p>
+		</div>
+
+		<div class="movies">
+			<h1>Iron man2</h1>
+			<p>This is good marvel movie</p>
+		</div>
+
+		<div class="movies">
+			<h1>Iron man3</h1>
+			<p>This is good marvel movie</p>
+		</div>
+	</div>
+</body>
+</html>

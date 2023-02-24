@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Navigation Bars and Side Navigation Bars</title>
+</head>
+
+
+<style type="text/css">
+	.navbar{
+			background-color: #00a65a;
+			padding: 20px;
+	}
+	
+	.navbar ul{
+		display: inline;
+	}
+
+	.navbar li{
+		display: inline;
+		font-size: 20px;
+		margin-left: 40px;
+	}
+
+	.navbar a{
+		text-decoration: none;
+		color: white;
+		padding: 15px;
+	}
+
+	.navbar a:hover{
+
+		background-color: white;
+		color: green;
+	}
+
+	.submenu-1 {
+		display: none;
+	}
+
+	.navbar li:hover .submenu-1{
+		display: block;
+		position: absolute;
+		background-color: #00a65a;
+		margin-left: 95px;
+		margin-top: 18px;
+	}
+
+	.navbar li:hover .submenu-1 ul{
+		display: inline-block;
+		line-height: 2.5em;
+		padding: 0px;
+	}
+	.navbar li:hover .submenu-1 ul li{
+
+		display: block;
+		font-size: 16px;
+		margin: 0px;
+		border-bottom: 1px dotted;
+	}
+
+	.navbar li:hover .submenu-1 ul li a{
+		color: white;
+	}
+	.navbar li:hover .submenu-1 ul li a:hover{
+		color: black;
+	}
+
+	.submenu-2{
+		display: none;
+	}
+
+	.hover:hover .submenu-2{
+		display: block;
+		position: absolute;
+		background-color: #00a65a;
+		margin-left: 130px;
+		margin-top: -50px;
+		width: 120px;
+	}
+
+	.hover:hover .submenu-2 ul{
+		display: inline-block;
+		line-height: 2.5em;
+		padding: 0px;
+		width: 100%;
+	}
+	.navbar li:hover .submenu-1 ul li{
+
+		display: block;
+		font-size: 16px;
+		margin: 0px;
+		border-bottom: 1px dotted;
+	}
+
+
+</style>
+
+
+
+
+<body>
+
+<div class="navbar">
+	<ul>
+		<li><a href=""><span><i class="bi bi-house-door-fill"></i>&nbsp</span>
+			Home</a>
+			<div class="submenu-1">
+				
+				<ul>
+					<li><a href="#">Home Menu #1</a></li>
+					<li><a href="#">Home Menu #2</a></li>
+					<li><a href="#">Home Menu #3</a></li>
+					<li class="hover">
+
+						<a href="#">Home Menu #4</a>
+
+						<div class="submenu-2">
+							<ul>
+								<li ><a href="#">Submenu-1 </a></li>
+								<li ><a href="#">Submenu-2 </a></li>
+								<li ><a href="#">Submenu-3</a></li>
+								<li ><a href="#">Submenu-4 </a></li>
+							</ul>
+
+
+						</div>
+
+
+					</li>
+					
+				</ul>
+			</div>
+
+		</li>
+		<li><a href=""><span><i class="bi bi-file-person-fill"></i> &nbsp</span>About</a></li>
+		<li><a href=""><span><i class="bi bi-info"></i>&nbsp</span>Services</a></li>
+		<li><a href=""><span><i class="bi bi-book"></i>&nbsp</span>Products</a></li>	
+		<li><a href=""><span><i class="bi bi-telephone"></i>&nbsp</span> Contacts</a></li>	
+	</ul>
+</div>
+
+</body>
+</html>
