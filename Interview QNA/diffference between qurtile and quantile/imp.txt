@@ -1,0 +1,12 @@
+Quantile is something which divides the dataset into equal parts.
+
+A quantile which divides the dataset into 4 parts is a quartile ie at 0.25, 0.5 , 0.75 . Quartile is a type of Quantile.
+
+There are diff types of quantiles. Please look for the image given below:
+
+
+
+
+
+
+https://qr.ae/pvJdqm
